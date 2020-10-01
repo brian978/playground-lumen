@@ -1,7 +1,15 @@
-/vendor/
+/app/vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
+
+# IDE
+.idea
+
+# DEV environment
+www.conf
+default.conf
+/logs/
 
 # Laravel 4 specific
 bootstrap/compiled.php
