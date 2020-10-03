@@ -7,14 +7,14 @@ services:
     links:
       - php
     volumes:
-      - ./app:/var/www/app
+      - ./app:/var/www/html
       - ./container-config/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
       - ./logs/nginx:/var/log/nginx
   
   php:
     image: brian978/php-fpm:7.4
     volumes:
-      - ./app:/var/www/app
+      - ./app:/var/www/html
       - ./container-config/fpm/www.conf.dist:/usr/local/etc/php-fpm.d/www.conf
       - ./logs/php:/var/log/php
       - ./profile/php/bash_profile:/root/.bash_profile
@@ -34,4 +34,3 @@ services:
 
 volumes:
   mysql-volume:
-  mssql-volume:
