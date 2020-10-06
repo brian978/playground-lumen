@@ -1,6 +1,8 @@
 # playground-lumen
 Lumen app playground
 
+What you see here does not have to make sense or even be a good architecture.
+
 ## Requirements
 You need to have the following applications installed:
 - Docker Desktop
