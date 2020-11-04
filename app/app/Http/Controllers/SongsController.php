@@ -11,6 +11,6 @@ class SongsController extends Controller
      */
     public function listSongs(?string $service = null)
     {
-
+        return response()->json([]);
     }
 }

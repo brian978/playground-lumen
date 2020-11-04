@@ -78,7 +78,7 @@ $app->middleware([
 ]);
 
 $app->routeMiddleware([
-    'example' => App\Http\Middleware\ExampleMiddleware::class
+//    'example' => App\Http\Middleware\ExampleMiddleware::class
 ]);
 
 /*
